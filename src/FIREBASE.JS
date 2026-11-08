@@ -26,7 +26,7 @@ export const app = initializeApp(firebaseConfig);
 if (import.meta.env.DEV) {
   // `true` makes the SDK print a new token in the browser console.
   // Once you've registered a token, put it in .env and it is reused.
-  self.FIREBASE_APPCHECK_DEBUG_TOKEN =
+  self.FIREBASE_APPCHECK_DEBUG_TOKEN = 
     import.meta.env.VITE_APPCHECK_DEBUG_TOKEN || true;
 }
 
