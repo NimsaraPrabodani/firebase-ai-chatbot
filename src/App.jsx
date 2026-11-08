@@ -1,13 +1,12 @@
-import { useEffect, useState } from "react";
-import Sidebar from "./components/Sidebar.jsx";
-import ChatWindow from "./components/ChartWindow.jsx";
+import { useEffect, useRef, useState } from "react";
+import Sidebar from "./components/Sidebar";
+import ChatWindow from "./components/ChartWindow";
 import { askGemini, friendlyError } from "./services/gemini";
-
 import {
   loadConversations as loadCloud,
   saveConversation,
   removeConversation,
-} from "./services/cloudHistory";
+} from "./services/ClaudHistory";
 
 const STORAGE_KEY = "chat-conversations";
 
